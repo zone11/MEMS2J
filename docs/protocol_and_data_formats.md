@@ -86,9 +86,6 @@ ECU:    [0x01][0x7E][0x7F]
 Send every ~2 seconds when no other commands are active.
 
 ## Seed-to-Key Algorithm
-
-Verified identical for MEMS2J and MEMS3.
-
 ```go
 func generateKey(seed int) int {
     key := 0
@@ -316,5 +313,3 @@ Byte indices are 0-based within the response payload (byte 0 = `0x61`).
 | [rover-mems-agent — ecu-auth.go](https://github.com/james-portman/rover-mems-agent/blob/master/ecu-auth.go) | Seed-to-key algorithm |
 | [rover-mems-agent — ecu-2j-faults.go](https://github.com/james-portman/rover-mems-agent/blob/master/ecu-2j-faults.go) | Fault code byte positions and bitmasks |
 | [andrewrevill.co.uk — MEMSMapperEU2](https://andrewrevill.co.uk/MEMSMapperEU2.htm) | MEMS2J protocol documentation, service table |
-| ISO 14230-4 | KWP-2000 protocol specification |
-| ISO 9141-2 | K-Line physical layer specification |
